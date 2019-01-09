@@ -1,0 +1,19 @@
+{
+  "name": "scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "kcd-scripts test",
+    "build": "BUILD_WEBPACK=true kcd-scripts build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/runtime": "^7.2.0"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-modules-umd": "latest",
+    "kcd-scripts": "^0.49.0"
+  }
+}
