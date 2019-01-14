@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "kcd-scripts test",
-    "build": "BUILD_WEBPACK=true kcd-scripts build"
+    "build": "BUILD_ROLLUP=true kcd-scripts build -- --bundle",
+    "abuild": "BUILD_ROLLUP=true node_modules/jaakko-scripts/src/index.js build -- --bundle --file bundle.js --format umd --name \"myBundle\"",
+    "bbuild": "BUILD_ROLLUP=true BUILD_FORMAT=umd node_modules/jaakko-scripts/src/index.js build -- --bundle --watch"
   },
   "author": "",
   "license": "ISC",
@@ -14,6 +16,6 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-modules-umd": "latest",
-    "kcd-scripts": "^0.49.0"
+    "jaakko-scripts": "0.0.0"
   }
 }
